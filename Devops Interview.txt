@@ -1,0 +1,499 @@
+Devops-
+https://intellipaat.com/blog/interview-question/azure-devops-interview-questions/
+https://mindmajix.com/azure-devops-interview-questions
+https://www.interviewkickstart.com/interview-questions/azure-devops-interview-questions
+https://www.simplilearn.com/tutorials/devops-tutorial/devops-interview-questions(*)
+https://www.dotnettricks.com/learn/devops/top-20-azure-devops-interview-questions-answers(no use)
+
+
+**Note that Docker does not run on Windows or Mac.
+
+1. What is DevOps?
+The full form of DevOps is Development and Operation’s Collaboration. It focuses on the 3Ps—Process, People, and (working) Product that stands for 
+
+ and continuous delivery of value to end-users.
+
+In simple terms, DevOps, essentially, speeds up the process of delivery of applications and software services. This ability to continuously deliver minimizes the risk factor. This is possible through stakeholder and end-user feedback collection.
+
+2. Why use DevOps?
+DevOps is important because it's a software development and operations approach that enables faster development of new products and easier maintenance of existing deployments.
+
+3. How does DevOps work?
+DevOps works by promoting collaboration, automation, and continuous integration and delivery throughout the software development and deployment lifecycle. Here's an overview of how DevOps works:
+
+Cultural Shift: DevOps involves a cultural shift in the organization, emphasizing collaboration and shared responsibility between development, operations, and other teams involved in the software delivery process. This includes fostering a culture of trust, open communication, and continuous learning.
+
+Planning and Requirements: The development and operations teams work closely together from the early stages of planning and gathering requirements. This ensures that infrastructure considerations, deployment strategies, and operational requirements are taken into account during the development process.
+
+Continuous Integration: Developers write code in small, manageable increments and integrate their changes frequently. Continuous Integration (CI) involves automating the build, test, and integration of code changes into a shared repository. This allows for early detection of integration issues and provides faster feedback to developers.
+
+Continuous Delivery and Deployment: Continuous Delivery (CD) focuses on automating the process of delivering software updates to production-like environments. It involves deploying applications to staging environments for further testing, validation, and user acceptance. Continuous Deployment takes this a step further by automatically deploying changes to production environments after passing predefined tests and criteria.
+
+Infrastructure as Code: DevOps emphasizes treating infrastructure as code, using tools such as configuration management and infrastructure automation. Infrastructure is defined and provisioned programmatically, allowing for consistency, scalability, and versioning of infrastructure changes. This approach enables the efficient management of infrastructure resources and reduces the risk of manual errors.
+
+Monitoring and Feedback: DevOps advocates for continuous monitoring and feedback to gain insights into application and infrastructure performance. This includes implementing logging, monitoring, and analytics solutions to track metrics, detect issues, and provide feedback loops for improvement. Monitoring helps identify potential bottlenecks, performance issues, and security vulnerabilities.
+
+Automation and Tooling: DevOps heavily relies on automation and tooling to streamline processes and reduce manual work. Various tools are used for source code management, build automation, testing, deployment automation, infrastructure provisioning, and monitoring. These tools enable teams to automate repetitive tasks, reduce errors, and improve efficiency.
+
+Continuous Learning and Improvement: DevOps promotes a culture of continuous learning and improvement. Teams regularly reflect on their processes, identify bottlenecks, and seek ways to optimize and streamline workflows. This may involve conducting post-incident reviews, retrospectives, and using data-driven insights to drive improvements.
+
+4. Explain the different phases of the DevOps lifecycle.
+Azure DevOps interview questions cover every phase of the DevOps lifecycle separately or in a single question. The different phases in the DevOps methodology are:
+
+Plan – The team discusses all the project requirements, like time for each stage, cost, and more. 
+Code – The software engineers write the small codes, known as units, according to the client's requirements. 
+Build – Involves the building of the units. 
+Test – The team tests if there are any mistakes. If yes, it is returned for a rebuild.
+Integrate – Involves the integration of all the units of the codes. 
+Deploy – codeDevOpsNow is deployed on the client's environment.
+Operate – Operations are performed on the code.
+Monitor – This is the last phase wherein applications are monitored in the client's environment.
+
+4.Who is a DevOps Engineer?
+Plan
+Code
+Build
+Test
+Release
+Deploy
+Operate
+Monitor.....Continuous process
+
+5.What is Azure DevOps? What is the difference between Azure DevOps and VSTS Online?
+Microsoft Visual Studio Team Services, now known as Azure DevOps having excellent application lifecycle management tool.
+
+We can plan a project with Agile tools and templates, manage and run test plans, Version control source code and manage the branches, deploy the solution across all platform using Azure Pipelines, by implementing Continuous Instigation and Continuous Deployment.
+
+5. What is Azure DevOps?
+The process includes testing automation, continuous integration, as well as continuous delivery.
+People with both development and operations skills work together and implement various tools for CI-CD and monitoring for quick response to customer’s requirements and fix issues and bugs.
+
+Azure DevOps is the new name for Microsoft VSTS (Visual Studio Team Services) and an application lifecycle management tool. It helps in project planning through Agile tools and templates. Other functionalities include version control of source code, management and execution of test plans, and management of branches.
+
+Additionally, Azure DevOps also helps in solution deployments across various platforms with the help of Azure Pipelines and allows continuous integration and continuous deployment.
+
+6. What are the benefits of DevOps?
+The major benefits of DevOps are:
+
+Customer satisfaction
+More engagement and collaboration between Development and Operation teams
+Faster code deployment in the market through continuous integration and delivery
+Faster operational support
+Higher efficiency
+Strong infrastructure and IT performance
+Continuous improvements and reduced failures
+Transparency between teams/li>
+Constant monitoring and better adaption
+
+11. Name three important DevOps KPIs.
+The three important KPIs are as follows:
+Meantime to failure recovery: This is the average time taken to recover from a failure.
+Deployment frequency: The frequency in which the deployment occurs. 
+Percentage of failed deployments: The number of times the deployment fails.
+
+7. Name a few DevOps tools.
+Some popular DevOps tools are:
+
+Git
+Maven
+Jenkins
+Azure Pipeline
+Kubernetes
+Terraform
+Nagios
+Docker
+
+8. What are the popular DevOps tools for Continuous Integration and Continuous Deployment?
+Azure Pipelines support macOS, Windows, and Linux. Following are a few popular DevOps tools for Continuous Integration:
+
+Jenkins
+TeamCity
+Codeship
+GitLab CI
+CircleCI
+Travis CI
+Bamboo
+Following are some of the popular Continuous Deployment tools:
+
+Jenkins
+Azure Pipelines for Deployment
+DeployBot
+TeamCity
+Bamboo
+ElectricFlow
+AWS CodeDeploy
+Octopus Deploy
+Shippable
+
+8. What is the git command that downloads any repository from GitHub to your computer?
+Gitclone
+
+9. How do you push a file from your local system to the GitHub repository using Git?
+First, connect the local repository to your remote repository:
+
+git remote add origin [copied web address]      
+
+// Ex: git remote add origin https://github.com/Simplilearn-github/test.git
+
+Second, push your file to the remote repository:
+
+git push origin master
+
+31. Which of the following CLI commands can be used to rename files?
+git mv
+
+32. What is the process for reverting a commit that has already been pushed and made public?
+There are two ways that you can revert a commit: 
+
+Remove or fix the bad file in a new commit and push it to the remote repository. Then commit it to the remote repository using:
+
+git commit –m "commit message"
+
+Create a new commit that undoes all the changes that were made in the bad commit. Use the following command:
+
+git revert <commit id>
+Example: git revert 56de0938f
+
+34. What is Git stash?
+A developer working with a current branch wants to switch to another branch to work on something else, but the developer doesn't want to commit changes to your unfinished work. The solution to this issue is Git stash. Git stash takes your modified tracked files and saves them on a stack of unfinished changes that you can reapply at any time.
+
+
+
+5.What is the Blue/Green Deployment Pattern?
+A blue/green deployment is a deployment strategy in which you create two separate, but identical environments. One environment (blue) is running the current application version and one environment (green) is running the new application version.
+
+6.Explain how we can create a backup and copy files in Jenkins?
+In Jenkins, you can create backups of your Jenkins configuration and copy files using various plugins and built-in features. Here's an explanation of how you can achieve this:
+
+Backup Jenkins Configuration:
+
+Plugin: One popular plugin for backing up Jenkins configuration is the "ThinBackup" plugin. You can install it from the Jenkins Plugin Manager.
+Configuration: Once the plugin is installed, go to "Manage Jenkins" > "ThinBackup" to configure the backup settings. You can specify the backup location, schedule regular backups, define which data to include (jobs, plugins, settings, etc.), and set up retention policies.
+Manual Backup: You can also create a manual backup by copying the Jenkins home directory to a safe location. The Jenkins home directory typically contains all the configuration, jobs, plugins, and other relevant data. The location of the Jenkins home directory can be found in the Jenkins system configuration.
+Copy Files in Jenkins:--->
+Copy Artifact Plugin: To copy files between Jenkins jobs or from a job to a specific location, you can use the "Copy Artifact" plugin. Install the plugin from the Jenkins Plugin Manager if it's not already installed.
+Configuration: In the job where you want to copy files, add a build step or post-build action using the "Copy artifacts from another project" option. Specify the source project, files/directories to copy, and the destination directory.
+Copy to Remote Server: If you need to copy files to a remote server, you can use SSH or SCP (Secure Copy) commands in a Jenkins build step or script. You can use the "SSH Agent" or "Publish Over SSH" plugins to simplify SSH-based file transfers.
+Archive Artifact: Jenkins also provides the option to archive build artifacts, such as binaries or generated reports. In your job's configuration, enable the "Archive the artifacts" option and specify the files or directories to include. Archived artifacts can be accessed and downloaded later from the job's build history or using the Jenkins API.
+
+
+8.What is the difference between pull and fetch?
+git fetch is the command that tells your local git to retrieve the latest meta-data info from the original (yet doesn't do any file transferring. It's more like just checking to see if there are any changes available). git pull on the other hand does that AND brings (copy) those changes from the remote repository.
+
+9. What are Azure Boards?
+Azure Boards is an Azure DevOps service. It helps manage the work in software projects and provides a wide range of functionalities like native support for Signboard  and Scrum, customizable dashboards, and integrated reporting. Azure Boards include features like boards, sprints, work items, dashboards, backlogs, queries, etc.
+
+or
+
+This Azure DevOps service is used for managing the project of software. The various abilities offered by it include reporting, dashboards, kanban, and scrums. Backlogs, queries, dashboards, sprints, and work items are the essential features of Azure boards.
+
+10. What is Azure Repos?
+Azure Repos is a version control system that can manage the different versions of a code and the code itself throughout the lifecycle of development. It is easy to track any changes in the code made by different teams. It also keeps a detailed record of these changes and the history for better coordination within the team. The changes are then merged at a later stage.
+
+Azure Repos offers a centralized version control system (Team Foundation Version Control-No in use) as well as a distributed version control system (Git).
+
+11. What are containers?
+Containers provide the means to package software code, its configurations, dependencies, and packages into a single unit or object. Multiple containers can run on the same machine and share OS with other containers for running fast, reliable, and consistent deployments anywhere.
+
+12.What containers does Azure DevOps support?
+Azure DevOps provides the following container support:
+
+Docker
+Azure Kubernetes services
+Asp.Net with containers
+
+13. What are Azure Pipelines?
+Azure Pipelines automatically builds and tests code projects. It supports all major languages and project types and combines continuous integration, continuous delivery, and continuous testing to build, test, and deliver your code to any destination.
+
+or
+
+Azure DevOps Pipeline automatically develops and tests code projects. It is a service on the Azure cloud that works well with most project types and languages. This service helps in improving the availability of code projects to other users.
+
+or
+
+It is considered one of the most important cloud services. With the help of Azure pipelines, the project codes can be built as well as tested automatically. With the aid of major languages and the kind of projects, it does its work productively. The project code is shared with other customers as well by this feature.
+
+15. What are Azure Test Plans?
+Azure Test Plans is a test management module within Azure DevOps that lets users manage test plans, test suites, and test cases for everyone in the software development process. Using test plans, you can Azure Test Plans also provides a browser extension for exploratory testing and gathering feedback from stakeholders.
+
+16. What do you mean by Azure artifacts?
+Azure artifact is an extension making it easy to install, discover, and publish the packages such as npm, NuGet, and Maven in Azure DevOps. The package management becomes a smooth process in the existing workflows because of its deep integration with other hubs such as Build.
+
+6. What do you mean by Multi-stage pipeline?
+CI, CD, or both are allowed by a multi-stage pipeline in a single YAML pipeline code. Being easy to maintain and easy to check the current stage of our deployment is among the many benefits provided by it.
+
+7. List some benefits of Azure pipelines.
+Some of the benefits provided by Azure pipelines are-
+
+Integration with GitHub
+Integration with Azure deployments
+The ability to work with any platform or language
+The ability to deploy and work on multiple targets at the same time
+Configuration of open-source projects
+
+5. What is meant by system capabilities and user capabilities in the Azure pipeline?
+The self-hosted agent contains a set of capabilities that defines the scope of various capabilities. The name-value pairs are referred to as capabilities. They are called system capabilities when they get discovered automatically by the agent software. On the other hand, they are called user capabilities when they are defined by us. System capabilities such as operating system name, machine name, and other installed software are detected by the agent software.
+
+6. What is the azure cli command used to run the pipeline?
+az pipelines run --name <pipeline-name> --org <organization-url> --project <project-name>
+
+10. Explain the use of an active directory in Azure.
+It is used for access management. It helps in enabling access to the employees to particular products and services of our networks. Some major examples include Salesforce.com and Twitter. Application-built support in galleries is provided by this active directory.
+
+14. Explain the function of Scrum master in azure boards.
+Scrum master is always on the lookout to remove all the deply, resolve impediments, and other blocking issues arising during a sprint. They are continually ensuring the improvement of the team. They can be called part team members, part cheerleaders, and part coaches.
+
+15. How can a Git repository be created in Azure DevOps?
+A Git repository can be created by following the given steps:
+
+Open DevOps
+Choose the respective project
+Click on Repos
+Click on Files from Repos
+Click on repositories
+Click on the "New repository" option from the dropdown menu
+Choose repository type as Git in the panel appeared.
+Give the repository a name
+The "Add a README" check button
+
+1.Mention some of the alternatives to azure DevOps?
+Some of the main alternatives to azure DevOps are GitHub, Jenkins, GitLab, Jira, TeamCity, Bitbucket, Jira, Octopus Deploy, and Amazon Web Services.
+
+
+15. What different types of backlogs and board options are available in Azure boards?
+Three classes of backlogs are available to manage the work:
+
+Product
+Portfolio
+Sprint
+And two types of boards are available-
+
+Kanban
+Taskboards
+
+3. Which service is used for managing Azure resources?
+Various services, such as deployment, management, etc., are handled by the Azure Resource Manager.
+
+4. What is VNet?
+ VNet stands for Virtual Network. It is a fundamental networking construct that allows you to securely connect and isolate Azure resources within a virtual network environment. A VNet is similar to a traditional network in an on-premises data center, but it provides the flexibility and scalability of the cloud.
+
+4. Differentiate between Azure DevOps server and azure DevOps services.
+Azure DevOps Server is an on-premise platform based on a SQL server. Generally, enterprises opt for an on-premise platform whenever there is a need to access SQL server reporting services integrated with azure DevOps tools and data.
+Azure DevOps services, on the other hand, are the cloud services of Microsoft Azure. It offers highly reliable as well as scalable globally available services.
+
+5. What are the main components of Azure DevOps?
+The main components of azure DevOps are given below:
+
+Azure Boards- work item tracking, agile planning, reporting, and visualization tool
+Azure Repos- cloud-hosted private git Repos are provided
+Azure pipelines- a language and cloud-agnostic CD/CI platform supporting containers or Kubernetes
+Azure test plans- a planned and integrated testing solution is provided
+Azure artifacts- integrated package management supporting npm, Maven, NuGet, and Python package feeds from private or public sources.
+
+
+6. Elaborate on the job role of Azure DevOps engineer.
+An Azure DevOps engineer is responsible for designing and implementing a scalable, strong, realistic, and practical cloud solution that would work for the clients.
+
+7. Which web applications can be deployed with Azure?
+The web applications given below can be deployed with Azure:
+
+PHP
+ASP.NET
+WCF
+
+
+8. Mention different ways for connecting with a project in Azure DevOps.
+Following different ways can be followed to connect to a project:
+
+Integrating with Team Explorer or Visual studio. 
+Visual studio code
+Through web portal
+Eclipse/Team explorer
+Intellij with the Azure DevOps services
+Android studio with the Azure DevOps services
+
+
+8. What is meant by the pull requests in Azure DevOps Repos?
+Pull requests are used for reviewing as well as merging codes to a Git project. Pull requests enable the team to review the code and also provide feedback on it. Either feature or topic branch, along with a fork, can be the source of pull requests.
+
+
+17. What is the Dogpile effect?
+Dogpile Effect means when the system is under heavy volume of traffic, whenever a cache invalidates, either by cleanup or timeout, it will have a huge impact.
+
+18. What is Forking Workflow?  --(?)
+Forking Workflow gives Developers the service-side repositories. It supports open-source projects and is often used together with a Git hosting service like Bitbucket.
+
+19. What are some of the useful plugins in Jenkins?
+In Azure Jenkins, which is the Jenkins integration with Microsoft Azure, there are several useful plugins available to enhance your CI/CD workflows and enable seamless integration with Azure services. Here are a few notable plugins:
+
+Azure CLI Plugin: This plugin allows you to execute Azure CLI commands directly from Jenkins. It enables you to manage Azure resources, deploy applications, and interact with various Azure services.
+
+Azure Storage Plugin: This plugin provides functionality to upload and download files from Azure Blob Storage as part of your build or deployment process. It helps with storing build artifacts, logs, or any other files required for your application.
+
+Azure Container Agents Plugin: This plugin allows you to provision Jenkins agents in Azure Container Instances (ACI). It enables elastic scaling of Jenkins agents in a cost-effective manner by leveraging Azure's serverless container offering.
+
+Azure Virtual Machine Scale Sets Plugin: This plugin integrates Jenkins with Azure Virtual Machine Scale Sets (VMSS). It helps in dynamically provisioning and scaling Jenkins agents based on workload demands, improving performance and resource utilization.
+
+Azure Key Vault Plugin: This plugin enables secure retrieval of secrets, certificates, and credentials stored in Azure Key Vault during your Jenkins build or deployment process. It helps in maintaining the security and integrity of sensitive information.
+
+Azure App Service Plugin: This plugin facilitates deploying applications to Azure App Service, which is a Platform-as-a-Service (PaaS) offering for hosting web applications. It simplifies the deployment of Java, .NET, Node.js, and other applications to Azure App Service.
+
+Azure Container Service (AKS) Plugin: This plugin integrates Jenkins with Azure Kubernetes Service (AKS), allowing you to deploy and manage containerized applications on AKS clusters. It streamlines the deployment and scaling of containerized workloads.
+
+Azure Functions Plugin: This plugin enables Jenkins integration with Azure Functions, a serverless computing platform. It allows you to build, deploy, and manage serverless functions as part of your CI/CD pipeline.
+
+Azure Functions Deployment Plugin: This plugin simplifies the deployment of Azure Functions from Jenkins. It automates the packaging and deployment of serverless functions to Azure Functions runtime.
+
+Azure Pipelines Plugin: This plugin enables you to trigger Azure Pipelines as part of your Jenkins workflow. It allows you to seamlessly integrate Jenkins with Azure Pipelines for advanced build and release management capabilities.
+
+Azure Container Registry Plugin: This plugin integrates Jenkins with Azure Container Registry (ACR), providing the ability to push, pull, and manage container images stored in ACR. It facilitates seamless integration of container image management into your CI/CD pipeline.
+
+20. Can we move or copy Jenkins from one server to another?(?)
+Yes, it is possible. Jenkins can be moved or copied from one server to another. When copying Jenkins, it is possible to move the jobs directory from the older server to the new or the current one. This enables moving an installation by copying in the corresponding job directory.
+
+
+21.What are Azure DevOps Projects?
+Azure DevOps Project is a simplified way to effectively bring existing code and Git repository for the creation of CI and CD pipeline to Azure.
+
+22. What is the difference between Azure DevOps Services and Azure DevOps Server?
+This is one of the trickier Azure DevOps interview questions. Azure DevOps Services is the cloud service of Microsoft Azure and it offers a highly scalable and reliable hosted service that is globally available. DevOps Server, on the other hand, is an on-premise offering that is on a SQL Server back end.
+
+Enterprises go for the on-premise offering when they want their day within their network or when there is a requirement for accessing SQL Server reporting services that are integrated with Azure DevOps data and tools.
+
+23. What are the different DevOps solution architectures?
+Multiple tools and technologies can be leveraged with Azure to design solution architectures for the below DevOps scenarios:
+
+CI/CD for Azure VMs
+CI/CD for Azure Web Apps
+CI/CD for containers
+DevTest image factory
+Using Azure Web Apps and Jenkins for Java CI/CD
+Using Jenkins and Terraform on Azure Virtual Architecture for immutable infrastructure CI/CD
+Using Jenkins and Kubernetes on Azure Kubernetes Service for Container CI/CD
+
+
+24. What are the reasons to use CI and CD and Azure pipelines?
+ Implementing CI and CD pipelines ensure quality and reliable code.
+
+Azure pipelines are there to ensure a secure, easy, and quick way to automate project development processes and availability.
+
+Below are a few reasons for using CI/CD and Azure pipelines:
+
+Supports any platform or language
+Enables work with open-source project>
+Building on Windows, Mac, and Linux machines
+Enables simultaneous deployment to various types of a target
+Integration with GitHub and Azure deployments
+
+25. What should you do to make a NuGet package available to anonymous users outside your organization alongside minimizing the number of publication points?
+Packages that are hosted in Azure Artifacts, find storage in a feed. Sharing packages with higher scalability and according to requirements can be ensured by setting up permissions on the feed. These multiple feeds enable control of access to packages across four levels. These four levels of access are:
+
+Owners
+Readers
+Contributors
+Collaborators
+
+26. What can you do to improve the quality of code if there are many unused variables and empty catch blocks?
+Selecting “Run PMD” in a Maven build task will do the trick. PMD is a source code analyzer that is capable of identifying common programming errors like unnecessary object creation, unused variables, and empty code blocks.
+
+An Apache Maven PMD Plugin will automatically run the tool on a project’s source code and the detailed code error results are provided on the site report.
+
+27. How can you enable communication between members of the development team working in different locations around the world using Azure DevOps?
+
+MS Teams.
+
+28. What are the necessary components for the integration of Azure DevOps and Bitbucket?
+The integration of Azure DevOps and Bitbuckets requires a self-hosted agent and an external Git service connection. Since GitLab CI/CD is compatible with GitHub and Bitbucket. Instead of moving an entire project to GitLab, it is possible to connect the external repository. One can make use of GitLab CI/CD in this manner.
+
+29. What are the necessary components for the integration of Azure DevOps and Bitbucket?(?)
+The integration of Azure DevOps and Bitbuckets requires a self-hosted agent and an external Git service connection. Since GitLab CI/CD is compatible with GitHub and Bitbucket. Instead of moving an entire project to GitLab, it is possible to connect the external repository. One can make use of GitLab CI/CD in this manner.
+
+30. Explain Pair Programming with reference to DevOps.
+Pair programming is a software development technique where two programmers work together at a single workstation to collaboratively write code, solve problems, and achieve development goals. This practice is often associated with agile methodologies, including DevOps, as it promotes effective collaboration, knowledge sharing, and continuous improvement within development teams.
+
+In the context of DevOps, pair programming can be beneficial in several ways:
+
+Knowledge sharing
+Continuous learning
+Quality assurance
+Faster problem-solving
+Reduced knowledge silos: In a DevOps environment, where cross-functional collaboration is crucial, pair programming helps break down knowledge silos. By working closely together, developers from different domains (e.g., development, operations, or testing) can gain a deeper understanding of each other's responsibilities and challenges. This shared knowledge improves collaboration, communication, and empathy among team members.
+
+
+43. Which of the following commands runs Jenkins from the command line?
+java –jar Jenkins.war
+
+45. Which file is used to define dependency in Maven?
+pom.xml
+
+52. What are the ways in which a build can be scheduled/run in Jenkins?
+By source code management commits.
+After the completion of other builds.
+Scheduled to run at a specified time.
+Manual build requests.
+
+53. What are the commands that you can use to restart Jenkins manually?
+Two ways to manually restart Jenkins: 
+
+(Jenkins_url)/restart            // Forces a restart without waiting for builds to complete                                
+(Jenkins_url)/safeRestart    // Allows all running builds to complete before it restarts   
+
+88. Instead of YAML, what can you use as an alternate file for building Docker compose?
+To build a Docker compose, a user can use a JSON file instead of YAML. In case a user wants to use a JSON file, he/she should specify the filename as given:
+
+Docker-compose -f Docker-compose.json up
+
+
+89. How do you create a Docker container?
+Task: Create a MySQL Docker container 
+
+A user can either build a Docker image or pull an existing Docker image (like MySQL) from Docker Hub.
+
+Now, Docker creates a new container MySQL from the existing Docker image. Simultaneously, the container layer of the read-write filesystem is also created on top of the image layer.
+
+Command to create a Docker container: Docker run -t –i MySQL 
+Command to list down the running containers: Docker ps
+
+90. What is the difference between a registry and a repository?
+Registry: A registry is a central storage location that hosts and manages container images. Container registries are used to store and distribute container images that are used to deploy applications. They provide a secure and reliable way to store and share container images with others. Container registries are often provided as cloud services or can be self-hosted.
+In the case of Docker, the most widely used containerization platform, Docker Hub is an example of a public container registry. Other popular container registries include Azure Container Registry, Google Container Registry, and AWS Elastic Container Registry. Registries allow you to push (upload) container images to them and pull (download) images from them to deploy your applications.
+
+Repository: A repository, in the context of version control systems like Git, is a location where source code, project files, and version history are stored. It is a central place to store and manage code collaboratively. Developers use repositories to push their code changes, pull the latest code, and collaborate with other team members.
+Repositories are typically used for source code management, tracking changes, and facilitating collaboration among developers. They provide versioning capabilities, branching, merging, and other features to manage the development lifecycle. Commonly used repository hosting platforms include GitHub, GitLab, and Bitbucket.
+
+91. What are the cloud platforms that support Docker?
+The following are the cloud platforms that Docker runs on:
+
+Amazon Web Services
+Microsoft Azure
+Google Cloud Platform
+Rackspace
+
+92. What is the purpose of the expose and publish commands in Docker?
+Expose
+Expose is an instruction used in Dockerfile.
+It is used to expose ports within a Docker network.
+It is a documenting instruction used at the time of building an image and running a container.
+Expose is the command used in Docker.
+Example: Expose 8080
+Publish
+Publish is used in a Docker run command.
+It can be used outside a Docker environment.
+It is used to map a host port to a running container port.
+--publish or –p is the command used in Docker.
+Example: docker run –d –p 0.0.0.80:80
+
+96. What are the port numbers that Nagios uses for monitoring purposes?
+Usually, Nagios uses the following port numbers for monitoring:
+5666,5667,5668
+
+101. What are the benefits of HTTP(Hypertext Transfer Protocol ) and SSL(Secure sockets layer) certificate monitoring with Nagios?
+HTTPS (Hyper Text Transfer Protocol Secure).
+Ans:HTTP Certificate Monitoring
+Increased server, services, and application availability.
+Fast detection of network outages and protocol failures.
+Enables web transaction and web server performance monitoring.
+SSL Certificate Monitoring
+Increased website availability.
+Frequent application availability.
+It provides increased security.

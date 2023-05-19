@@ -1,0 +1,85 @@
+Devops-
+https://www.spiceworks.com/tech/devops/articles/azure-devops-interview-questions/
+https://www.opstrainerz.com/blog/azure-devops-interview-questions
+https://www.techgeeknext.com/azure-devops-interview-questions
+https://www.edureka.co/blog/interview-questions/top-devops-interview-questions/(*)
+
+1. Why is DevOps required?
+Code deployment was typically slow using traditional means in a non-agile or non-DevOps-enabled software development landscape. The development side of the DevOps team and the operations team or deployment team could have arguments regarding the progress of the project from time to time, with each side pointing blame at either the server or the code. DevOps steps in as a solution in such cases.
+
+With DevOps, businesses try to roll out minor improvements that they might deliver to customers via quick releases instead of providing a whole set of features at one time. This has numerous advantages – such as immediate customer feedback, higher software quality, and fewer errors, contributing to increased user satisfaction. Companies must do four things to achieve this:
+
+Increase deployment frequency.
+Minimize failure rate in new releases. 
+Reduce the time between fixes.
+Recover faster if a release fails
+
+2. What is Azure DevOps and how does it work?
+Microsoft VSTS (Visual Studio Team Services), an application lifecycle management service, was renamed Azure DevOps in 2018 – in response to the ascent of the Microsoft Azure cloud and rising demand for DevOps features.
+
+3. What are containers, and which ones does Azure DevOps support?
+Azure DevOps is compatible with container solutions, such as Docker, Azure Kubernetes services, Asp.Net with containers, and Azure Service Fabric application with Docker support.
+
+4. What are fault domains and update domains?
+Fault domains and update domains are the two IT infrastructure redundancy options available to Azure DevOps users. The former is a logical set of the underlying hardware that shares a common power source and network switch. It is similar to a rack in an on-premise data center in terms of its operations. The Azure platform distributes virtual machines (VMs) among various fault domains, which reduces the impact of physical hardware failures, network outages, and power outages.
+
+The latter (update domains) is also a logical collection of the underlying hardware – the difference is that it may be serviced or rebooted simultaneously. The Azure platform distributes the VMs among various update domains. As the Azure platform goes through pre-scheduled maintenance at regular intervals, this strategy assures that at least one application instance is always available. 
+
+5. What distinguishes Azure DevOps Services from Azure DevOps Server?
+This is a challenging Azure DevOps interview question. Azure DevOps Services offers a scalable and trustworthy hosted developer solution. In contrast, DevOps Server works on-premise with a SQL Server backend. 
+
+6. Name the web application which can be deployed with Azure ?
+The given below are the web applications, that can be deployed with Azure
+
+ASP.NET
+PHP
+WCF
+
+7. Make a note about availability sets ?
+This set is VMs logical group, which helps us to find how our application is built in Azure that offers availability, to get highly availability for application it is suggested that two or multiple VMs are designed in the sets of availability which leads to the Azure SLA at 99.95. If we use single VMs along with the storage of Azure premium, then for the maintenance of unplanned events Azure SLA is used. 
+
+8.What is Azure Bot Service?
+Microsoft's Azure Bot Service is an artificial intelligence (AI) chatbot that is available as a service on the Azure cloud service marketplace. Azure Bot Service enables the addition of intelligent agents capable of conversation without the need to commit resources to developing one's own AI.
+
+9.Name three important DevOps KPIs
+Lead time for changes: It measures the time taken from committing a change to code repository to the time it becomes available in production.
+Deployment frequency: It measures the number of times changes are deployed to production in a given period of time.
+Mean time to recover (MTTR): It measures the average time taken to recover from a service disruption or failure.
+
+10. Can one consider DevOps as an Agile methodology?
+DevOps is not considered an Agile methodology, but it can be used in conjunction with Agile practices to improve the software development process. Agile methodology focuses on delivering small increments of working software frequently, while DevOps focuses on improving collaboration and communication between development and operations teams to increase efficiency and reduce the time it takes to release software to production. DevOps can be seen as a complementary approach to Agile, as it can help Agile teams to better achieve their goals of delivering software quickly and reliably.
+
+11. What is Version control?
+This is probably the easiest question you will face in the interview. My suggestion is to first give a definition of Version control. It is a system that records changes to a file or set of files over time so that you can recall specific versions later. Version control systems consist of a central shared repository where teammates can commit changes to a file or set of file. Then you can mention the uses of version control.
+
+12.Explain trunk-based development.
+Trunk-based development is a software development methodology that focuses on frequent, small code changes being integrated into the main development branch (trunk) as soon as they are ready, rather than longer development cycles with multiple branches. This approach aims to minimize branching and merging, promoting continuous integration and testing, and allowing for faster delivery of new features and bug fixes to users. The main principle behind trunk-based development is to keep the trunk in a stable and releasable state at all times, allowing developers to work efficiently and reducing the risk of conflicts and integration issues.
+
+13.What is Docker hub?
+Docker hub is a cloud-based registry service which allows you to link to code repositories, build your images and test them, stores manually pushed images, and links to Docker cloud so you can deploy images to your hosts. It provides a centralized resource for container image discovery, distribution and change management, user and team collaboration, and workflow automation throughout the development pipeline.
+
+14. What is Dockerfile used for?
+ Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build users can create an automated build that executes several command-line instructions in succession.
+
+Q15. What platforms does Docker run on?
+I will start this answer by saying Docker runs on only Linux and Cloud platforms and then I will mention the below vendors of Linux:
+
+Ubuntu 12.04, 13.04 et al
+Fedora 19/20+
+RHEL 6.5+
+CentOS 6+
+Gentoo
+ArchLinux
+openSUSE 12.3+
+CRUX 3.0+
+Cloud:
+
+Amazon EC2
+Google Compute Engine
+Microsoft Azure
+Rackspace
+
+Q16. How to check for Docker Client and Docker Server version?
+
+docker version
+docker info
